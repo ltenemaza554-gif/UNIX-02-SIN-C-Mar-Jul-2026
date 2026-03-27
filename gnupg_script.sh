@@ -2,3 +2,4 @@
 # Step 2: Generate GPG key pair
 # Step 3: List GPG keys
 # Step 4: Export and import public keys
+# Step 5: Create plain text file
