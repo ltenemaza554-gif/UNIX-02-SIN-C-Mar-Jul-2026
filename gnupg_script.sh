@@ -5,3 +5,4 @@
 # Step 5: Create plain text file
 # Step 6: Encrypt and decrypt file
 # Step 7: Sign and verify file
+# Step 9: Encrypt and sign final file
