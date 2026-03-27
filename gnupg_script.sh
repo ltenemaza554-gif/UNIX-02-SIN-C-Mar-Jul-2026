@@ -3,3 +3,4 @@
 # Step 3: List GPG keys
 # Step 4: Export and import public keys
 # Step 5: Create plain text file
+# Step 6: Encrypt and decrypt file
