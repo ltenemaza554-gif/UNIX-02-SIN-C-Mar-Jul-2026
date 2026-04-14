@@ -853,3 +853,8 @@ sdb
 sdc                                            
 └─sdc1                                         
 sr0                                    
+
+[ -d /sys/firmware/efi ] && echo "UEFI" || echo "BIOS"
+#It checks if the system is using UEFI or BIOS and prints the result.
+BIOS
+
