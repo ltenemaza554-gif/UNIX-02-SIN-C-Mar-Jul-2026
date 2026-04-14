@@ -826,5 +826,30 @@ sr0
 
 ---
 
-
-
+lsblk -f
+#It shows block devices and their filesystem information.
+NAME    FSTYPE FSVER LABEL UUID FSAVAIL FSUSE% MOUNTPOINTS
+loop0                                          
+loop1                                          
+loop2                                          
+loop3                                          
+loop4                             19.2G    34% /workspaces/.codespaces/.persistedshare
+                                               /var/lib/docker
+                                               /home/vscode/.minikube
+                                               /etc/hosts
+                                               /etc/hostname
+                                               /etc/resolv.conf
+                                               /workspaces
+loop5                                          
+sda                                            
+└─sda1                            38.4G     8% /tmp
+sdb                                            
+├─sdb1                            11.4G    61% /workspaces/.codespaces/shared
+│                                              /.codespaces/bin
+│                                              /vscode
+│                                              /usr/sbin/docker-init
+├─sdb14                                        
+└─sdb15                                        
+sdc                                            
+└─sdc1                                         
+sr0                                    
