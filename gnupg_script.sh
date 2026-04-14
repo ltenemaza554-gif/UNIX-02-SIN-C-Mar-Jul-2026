@@ -861,3 +861,15 @@ BIOS
 echo "mi archivo" > clase.txt
 #It creates a file named clase.txt and writes ‘mi archivo’ inside it
 
+stat clase.txt
+#It displays detailed information about the file clase.txt.
+    File: clase.txt
+  Size: 11              Blocks: 8          IO Block: 4096   regular file
+Device: 7,4     Inode: 1573062     Links: 1
+Access: (0666/-rw-rw-rw-)  Uid: ( 1000/codespace)   Gid: ( 1000/codespace)
+Access: 2026-04-14 14:34:23.798125265 +0000
+Modify: 2026-04-14 14:34:21.842125349 +0000
+Change: 2026-04-14 14:34:21.842125349 +0000
+ Birth: 2026-04-14 14:33:47.105126832 +0000
+
+ 
