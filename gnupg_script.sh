@@ -858,3 +858,6 @@ sr0
 #It checks if the system is using UEFI or BIOS and prints the result.
 BIOS
 
+echo "mi archivo" > clase.txt
+#It creates a file named clase.txt and writes ‘mi archivo’ inside it
+
