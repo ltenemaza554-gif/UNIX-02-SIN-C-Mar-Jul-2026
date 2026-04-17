@@ -1,10 +1,11 @@
-# Step 2: Generate GPG key pa
-# Step 2: Generate GPG key pair
-# Step 3: List GPG keys
-# Step 4: Export and import public keys
-# Step 5: Create plain text file
-# Step 6: Encrypt and decrypt file
-# Step 7: Sign and verify file
-# Step 9: Encrypt and sign final file
-# Step 8: Manage trust and sign keys
-# Step 8: Manage trust and sign keys
+ls -a
+#lists all files in the directory, including hidden ones.
+.     .gitignore              MICOMPAdoc_cifrado.txt.asc  doc-cifrado.txt         doc_no_cifrado.txt.gpg      gnupg_script.sh       script_gnupg.sh
+..    LICENSE                 README.md                   doc_no_cifrado.txt      doc_no_cifrado.txt.sig      llaves.asc            suma.py
+.git  MICOMPAdoc_cifrado.txt  app.py                      doc_no_cifrado.txt.asc  doc_no_cifrado_firmado.txt  mi_llave_publica.asc
+
+ls --all
+#
+.     .gitignore              MICOMPAdoc_cifrado.txt.asc  doc-cifrado.txt         doc_no_cifrado.txt.gpg      gnupg_script.sh       script_gnupg.sh
+..    LICENSE                 README.md                   doc_no_cifrado.txt      doc_no_cifrado.txt.sig      llaves.asc            suma.py
+.git  MICOMPAdoc_cifrado.txt  app.py                      doc_no_cifrado.txt.asc  doc_no_cifrado_firmado.txt  mi_llave_publica.asc
