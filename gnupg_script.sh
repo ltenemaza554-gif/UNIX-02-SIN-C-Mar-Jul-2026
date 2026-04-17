@@ -71,3 +71,16 @@ drwxrwxrwx+ 8 codespace root 4.0K Apr 17 14:24 .git
 -rw-rw-rw-  1 codespace root 3.2K Apr 17 14:19 mi_llave_publica.asc
 -rw-rw-rw-  1 codespace root    0 Apr 17 14:19 script_gnupg.sh
 -rw-rw-rw-  1 codespace root   30 Apr 17 14:19 suma.py
+
+mkdir -rf
+#
+
+mkdir -- -rf
+#
+
+ls 
+#
+
+-rf      MICOMPAdoc_cifrado.txt      README.md  doc-cifrado.txt     doc_no_cifrado.txt.asc  doc_no_cifrado.txt.sig      gnupg_script.sh  mi_llave_publica.asc  suma.py
+LICENSE  MICOMPAdoc_cifrado.txt.asc  app.py     doc_no_cifrado.txt  doc_no_cifrado.txt.gpg  doc_no_cifrado_firmado.txt  llaves.asc       script_gnupg.sh
+
