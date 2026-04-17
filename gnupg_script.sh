@@ -259,15 +259,24 @@ ls -l
 touch script.sh
 ls -f
 chmod +x script.sh
+ls -l
 #
-chmod u+x script.s
+chmod u+x script.sh
 #
+ls -l
+-rwxrwxrwx  1 codespace codespace     0 Apr 17 14:55 script.sh
+-rw-rw-rw-  1 codespace root          0 Apr 17 14:19 script_gnupg.sh
+-rw-rw-rw-  1 codespace codespace     0 Apr 17 15:00 secreto
+-rw-rw-rw-  1 codespace root         30 Apr 17 14:19 suma.py
 touch secreto
 #
 chmod o-r secreto.txt
 #
+ls-l 
 touch privado
 #
 
-chmod u+rw.go-rwx privado 
+chmod u+rw,go-rwx privado 
 #
+ls -l
+history
