@@ -10,4 +10,4 @@ cd nueva carpeta
 cat 
 #me sirve para pasar de una carpeta hacia otra carpeta 
 cd..
-#me funciona para salirme del 
+#me funciona para salirme en donde estaba del cd
