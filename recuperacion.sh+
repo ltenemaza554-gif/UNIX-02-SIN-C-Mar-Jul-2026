@@ -1,0 +1,7 @@
+# crear una carprta
+mkdir nueva carpeta 
+#sirve para crear un archio
+touch nuevo archivo
+#compruebo que se lista los archivos y directorios 
+ls 
+#
