@@ -5,3 +5,4 @@ touch nuevo archivo
 #compruebo que se lista los archivos y directorios 
 ls 
 #
+
