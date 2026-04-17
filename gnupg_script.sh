@@ -79,13 +79,13 @@ mkdir -- -rf
 #
 #creates a directory literally named -rf (the -- stops options from being interpreted as flags).
 ls 
-#
+#lists the files and directories in the current directory.
 
 -rf      MICOMPAdoc_cifrado.txt      README.md  doc-cifrado.txt     doc_no_cifrado.txt.asc  doc_no_cifrado.txt.sig      gnupg_script.sh  mi_llave_publica.asc  suma.py
 LICENSE  MICOMPAdoc_cifrado.txt.asc  app.py     doc_no_cifrado.txt  doc_no_cifrado.txt.gpg  doc_no_cifrado_firmado.txt  llaves.asc       script_gnupg.sh
 
 ls --help
-#
+#shows a help message with available options and usage for the ls command.
 Usage: ls [OPTION]... [FILE]...
 List information about the FILEs (the current directory by default).
 Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
@@ -225,11 +225,49 @@ Report any translation bugs to <https://translationproject.org/team/>
 Full documentation <https://www.gnu.org/software/coreutils/ls>
 or available locally via: info '(coreutils) ls invocation
 
-
 man ls
 #opens the manual page for ls, showing all options and how to use the command
 
 /all
 #It shows everything that's with all
+ -a, --all
+              do not ignore entries starting with .
 
+       -A, --almost-all
+              do not list implied . and ..
 
+man git-clone
+#opens the manual page for git clone, which explains how to copy a remote Git repository to your local machine.
+
+/depth
+#
+
+       --depth <depth>
+           Create a shallow clone with a history truncated to the specified number of commits. Implies --single-branch unless --no-single-branch is given to fetch the
+           histories near the tips of all branches. If you want to clone submodules shallowly, also pass --shallow-submodules.
+
+       --shallow-since=<date>
+           Create a shallow clone with a history after the specified time.
+
+       --shallow-exclude=<revision>
+           Create a shallow clone with a history, excluding commits reachable from a specified remote branch or tag. This option can be specified multiple times.
+
+ls -l
+#lists files in long format, showing permissions, owner, size, and modification date.
+-rw-rw-rw-  1 codespace root      34523 Apr 17 14:19 LICENSE
+
+touch script.sh
+ls -f
+chmod +x script.sh
+#
+chmod u+x script.s
+#
+touch secreto
+#
+chmod o-r secreto.txt
+#
+touch privado
+#
+
+chmod u+rw.go-rwx privado 
+#
