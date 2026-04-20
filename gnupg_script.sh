@@ -301,3 +301,27 @@ sudo sh -c 'echo "chao" >> /etc/archivo_protegido'
 sudo -i,               
 #nos entramos a al root y con exit regresabamos en donde estavamos 
 
+echo "$HOME"
+#
+
+echo '$HOME'
+#
+echo '#!/bin/sh' > hola.sh
+#
+echo 'echo '''Hola desde mi primer script''' >> hola.sh
+#
+./hola.sh
+#
+ls -| hola.sh
+#
+chmod +x hola.sh
+#
+./hola.sh
+
+ls /etc
+#
+touch /etc/prueba.txt
+#
+apt install cowsay 
+#
+
