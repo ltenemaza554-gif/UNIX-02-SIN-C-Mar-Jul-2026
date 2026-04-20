@@ -298,3 +298,6 @@ echo "hola" |sudo tee /etc/archivo_protegido
 sudo sh -c 'echo "chao" >> /etc/archivo_protegido'
 #
 
+sudo -i,               
+#nos entramos a al root y con exit regresabamos en donde estavamos 
+
