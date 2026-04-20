@@ -287,11 +287,14 @@ sudo echo "hola" >/etc/archivo_protegido
 #
 t
 #
-stdin, stdon 
+stdin 
 #stdin  
-#stdon
 
 echo "hola" |sudo tee /etc/archivo_protegido>/dev/null
-
+#
 echo "hola" |sudo tee /etc/archivo_protegido
+#
+
+sudo sh -c 'echo "chao" >> /etc/archivo_protegido'
+#
 
