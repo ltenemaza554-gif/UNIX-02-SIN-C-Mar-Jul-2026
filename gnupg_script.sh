@@ -280,3 +280,9 @@ chmod u+rw,go-rwx privado
 #
 ls -l
 history
+
+superuser
+#need permission 
+sudo echo "hola" >/etc/archivo_protegido
+#
+t
