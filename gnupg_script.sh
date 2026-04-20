@@ -240,7 +240,7 @@ man git-clone
 #opens the manual page for git clone, which explains how to copy a remote Git repository to your local machine.
 
 /depth
-#
+#Display current depth setting
 
        --depth <depth>
            Create a shallow clone with a history truncated to the specified number of commits. Implies --single-branch unless --no-single-branch is given to fetch the
@@ -257,41 +257,40 @@ ls -l
 -rw-rw-rw-  1 codespace root      34523 Apr 17 14:19 LICENSE
 
 touch script.sh
+#Create script.sh file
 ls -f
+#List directory contents without sorting
 chmod +x script.sh
+#Make script.sh executable by adding execute permissions
 ls -l
-#
+#List directory contents in long format with detailed file information
 chmod u+x script.sh
-#
+#Add execute permission for the user on script.sh
 ls -l
 -rwxrwxrwx  1 codespace codespace     0 Apr 17 14:55 script.sh
 -rw-rw-rw-  1 codespace root          0 Apr 17 14:19 script_gnupg.sh
 -rw-rw-rw-  1 codespace codespace     0 Apr 17 15:00 secreto
 -rw-rw-rw-  1 codespace root         30 Apr 17 14:19 suma.py
 touch secreto
-#
+#Create an empty file named secreto
 chmod o-r secreto.txt
-#
+#Remove read permission for others on secreto.txt
 ls-l 
 touch privado
-#
+#Create an empty file named privado
 
 chmod u+rw,go-rwx privado 
-#
+#Set read and write permissions for owner and remove all permissions for group and others on privado
 ls -l
 history
 
 superuser
 #need permission 
 sudo echo "hola" >/etc/archivo_protegido
-#
-t
-#
-stdin 
-#stdin  
+#Attempt to write "hola" into a protected system file using sudo
 
 echo "hola" |sudo tee /etc/archivo_protegido>/dev/null
-#
+#Write "hola" to a protected system file using sudo and tee, suppressing output
 echo "hola" |sudo tee /etc/archivo_protegido
 #
 
@@ -312,7 +311,7 @@ echo 'echo '''Hola desde mi primer script''' >> hola.sh
 #
 ./hola.sh
 #
-ls -| hola.sh
+ls -l hola.sh
 #
 chmod +x hola.sh
 #
@@ -320,8 +319,39 @@ chmod +x hola.sh
 
 ls /etc
 #
+ODBCDataSources         cloud                environment  host.conf      libnl-3        manpath.config  pam.d       rc6.d        subgid             update-motd.d
+PackageKit              credstore            ethertypes   hostname       lighttpd       mime.types      passwd      rcS.d        subgid-            vconsole.conf
+X11                     credstore.encrypted  fish         hosts          locale.alias   mke2fs.conf     passwd-     resolv.conf  subuid             vim
+adduser.conf            cron.d               fonts        hosts.allow    locale.conf    modules-load.d  perl        rmt          subuid-            wgetrc
+alternatives            cron.daily           fstab        hosts.deny     locale.gen     mtab            polkit-1    rpc          sudo.conf          xattr.conf
+apache2                 cron.weekly          gai.conf     init.d         localtime      mysql           profile     rvmrc        sudo_logsrvd.conf  xdg
+apparmor.d              csh.login            gdb          inputrc        logcheck       nanorc          profile.d   security     sudoers            xml
+apt                     dbus-1               gitconfig    iproute2       login.defs     netconfig       protocols   selinux      sudoers.d          zsh
+archivo_protegido       debconf.conf         gnutls       issue          logrotate.d    networks        python3     services     sysctl.conf
+bash.bashrc             debian_version       gprofng.rc   issue.net      lsb-release    nftables.conf   python3.12  sgml         sysctl.d
+bash_completion         debuginfod           groff        kernel         lynx           nsswitch.conf   rc0.d       shadow       systemd
+bash_completion.d       default              group        ld.so.cache    machine-id     odbc.ini        rc1.d       shadow-      terminfo
+bindresvport.blacklist  deluser.conf         group-       ld.so.conf     magic          odbcinst.ini    rc2.d       shells       timezone
+binfmt.d                dpkg                 gshadow      ld.so.conf.d   magic.mime     opt             rc3.d       skel         tmpfiles.d
+ca-certificates         e2scrub.conf         gshadow-     legal          mailcap        os-release      rc4.d       ssh          ucf.conf
+ca-certificates.conf    emacs                gss          libaudit.conf  mailcap.order  pam.conf        rc5.d       ssl          ufw
+
 touch /etc/prueba.txt
 #
+
 apt install cowsay 
 #
+
+touch prueba.txt
+#
+chmod 600 prueba.txt
+#
+ls -l prueba.txt
+#
+chmod 755 prueba.txt
+#
+ls -l prueba.txt
+#
+
+
 
