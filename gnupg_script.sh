@@ -292,25 +292,25 @@ sudo echo "hola" >/etc/archivo_protegido
 echo "hola" |sudo tee /etc/archivo_protegido>/dev/null
 #Write "hola" to a protected system file using sudo and tee, suppressing output
 echo "hola" |sudo tee /etc/archivo_protegido
-#
+#write "hola" to /etc/archivo_protegido
 
 sudo sh -c 'echo "chao" >> /etc/archivo_protegido'
-#
+#append "chao" to /etc/archivo_protegido
 
 sudo -i,               
 #nos entramos a al root y con exit regresabamos en donde estavamos 
 
 echo "$HOME"
-#
+#print home directory path
 
 echo '$HOME'
-#
+#print literal "$HOME" string
 echo '#!/bin/sh' > hola.sh
-#
+#create hola.sh with shebang
 echo 'echo '''Hola desde mi primer script''' >> hola.sh
-#
+#append echo statement to hola.sh
 ./hola.sh
-#
+#execute hola.sh
 ls -l hola.sh
 #
 chmod +x hola.sh
