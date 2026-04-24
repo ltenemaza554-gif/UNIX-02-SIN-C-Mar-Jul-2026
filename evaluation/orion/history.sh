@@ -41,3 +41,4 @@ EOF
    32  chmod u+s script.sh && git add . && git commit -m "Fix Problem 5: Set SUID bit on script.sh" && git push origin eval_p2_1_g1
    33  history
    34  history > history.sh
+.
