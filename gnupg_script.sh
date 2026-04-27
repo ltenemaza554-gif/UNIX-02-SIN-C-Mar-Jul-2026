@@ -395,3 +395,18 @@ sudo chown -R $(whoami) .
 sudo setfacl -bnR .
 #Remove ACL permissions recursively from current directory
 
+
+umask 027
+Set file creation mask (umask) to 027
+
+touch archivo2
+#Create archivo2 file
+
+mkdir directorio2
+#Create directorio2 folder
+
+ls -l
+#List files showing inode numbers in current directory
+
+
+
