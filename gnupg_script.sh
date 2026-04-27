@@ -312,13 +312,14 @@ echo 'echo '''Hola desde mi primer script''' >> hola.sh
 ./hola.sh
 #execute hola.sh
 ls -l hola.sh
-#
+#Add execution permission listing for hola.sh script
 chmod +x hola.sh
-#
+#Make hola.sh executable
 ./hola.sh
-
+Run hola.sh script
 ls /etc
-#
+#List contents of /etc directory
+
 ODBCDataSources         cloud                environment  host.conf      libnl-3        manpath.config  pam.d       rc6.d        subgid             update-motd.d
 PackageKit              credstore            ethertypes   hostname       lighttpd       mime.types      passwd      rcS.d        subgid-            vconsole.conf
 X11                     credstore.encrypted  fish         hosts          locale.alias   mke2fs.conf     passwd-     resolv.conf  subuid             vim
@@ -337,21 +338,45 @@ ca-certificates         e2scrub.conf         gshadow-     legal          mailcap
 ca-certificates.conf    emacs                gss          libaudit.conf  mailcap.order  pam.conf        rc5.d       ssl          ufw
 
 touch /etc/prueba.txt
-#
+#Create prueba.txt file in /etc directory
 
 apt install cowsay 
-#
+#Install cowsay package
 
 touch prueba.txt
-#
+#Create prueba.txt file in current directory
+
 chmod 600 prueba.txt
-#
+#Set restrictive permissions (600) on prueba.txt
+
 ls -l prueba.txt
-#
+#Show detailed file permissions for prueba.txt
+
 chmod 755 prueba.txt
-#
+#Set executable permissions (755) on prueba.txt
+
 ls -l prueba.txt
-#
+#Show detailed permissions of prueba.txt after change
+
+umask
+#Display current file creation mask (umask) value
+0022
+
+sudp apt-get update
+#Run system package index update with apt-get (typo: sudo)
+
+sudo apt-get upgrade
+#Upgrade all installed packages to their latest versions using apt-get
 
 
+sudo apt-get  install acl 
+#Install acl package using apt-get with elevated privileges
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+acl is already the newest version (2.3.2-1build1.1).
+
+sudo chown -R $(whoami) .
+
+sudo setfacl -bnR .
 
