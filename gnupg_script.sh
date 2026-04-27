@@ -420,5 +420,23 @@ Create privado directory
 ls -l
 #List files and directories in long format
 
+useradd -m -s /usr/bin/zsh luna
+#Create user luna with home directory and Zsh shell
 
+sudo  useradd -m -s /usr/bin/zsh luna 
+#Create user luna with home directory and Zsh shell using sudo
 
+ls /home
+#List directories inside /home folder
+
+ls -l mi_archivo
+#Show detailed information (permissions, owner, size, etc.) for mi_archivo
+
+sudo chown luna mi_archivo 
+#Change owner of mi_archivo to user luna using sudo
+
+ls -l mi_archivo 
+#Show detailed file information for mi_archivo after ownership change_
+
+history
+#Show command history list
