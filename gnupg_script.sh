@@ -408,5 +408,17 @@ mkdir directorio2
 ls -l
 #List files showing inode numbers in current directory
 
+umask 077 
+#Set umask to 077 for restrictive file permissions
+
+touch secreto.txt
+#Create secreto.txt file
+
+mkdir privado
+Create privado directory
+
+ls -l
+#List files and directories in long format
+
 
 
