@@ -358,6 +358,19 @@ chmod 755 prueba.txt
 ls -l prueba.txt
 #Show detailed permissions of prueba.txt after change
 
+
+ia# no lo usamos porque te hace confundir mas 
+openclaw#podemos entrar a issues  y podemos buscar ayuda 
+
+touch archivo1
+#Create archivo1 file
+
+mkdir direcotrio1
+#Create directory1 folder
+
+ls -l
+#List files showing inode numbers in current directory
+
 umask
 #Display current file creation mask (umask) value
 0022
@@ -377,6 +390,8 @@ Reading state information... Done
 acl is already the newest version (2.3.2-1build1.1).
 
 sudo chown -R $(whoami) .
+#System setup and permission configuration
 
 sudo setfacl -bnR .
+#Remove ACL permissions recursively from current directory
 
