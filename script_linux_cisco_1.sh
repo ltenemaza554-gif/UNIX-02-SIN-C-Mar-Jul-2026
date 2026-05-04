@@ -91,3 +91,33 @@ wtmp     lastlog  fontconfig.log  dpkg.log  bootstrap.log  alternatives.log
 private  journal  faillog         btmp      apt            README
 
 su -
+su -l
+su --login
+#chore: switch to root user with a login shell
+password:
+
+ls -l hello.sh
+-rw-rw-rw- 1 codespace codespace 0 May  4 12:27 hello.sh
+#chore: display detailed information for hello.sh
+
+-rw-r--r-- 1 sysadmin sysadmin 647 Dec 20  2017 hello.sh
+#chore: analyze file permissions and ownership of hello.sh
+
+chmod
+chmod u+x hello.sh
+#chore: add execute permission for the owner of hello.sh
+
+ls -l hello.sh                                  
+-rwxr--r-- 1 sysadmin sysadmin 647 Dec 20  2017 hello.sh
+         
+-rwxr--r-- 1 sysadmin sysadmin 647 Dec 20  2017 hello.sh
+-rwxrw-rw- 1 codespace codespace 0 May  4 12:27 hello.sh
+
+./hello.sh  
+
+cd ~/Documents
+
+ ls -l
+ sudo ./hello.sh   
+ cat
+ cat alpha.txt   
