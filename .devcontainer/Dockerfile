@@ -220,5 +220,5 @@ RUN git config --system --add safe.directory '*' \
 # Prompt del curso para bash
 RUN chsh -s /usr/bim/zsh root 
 RUN cat >> /root/.zshrc <<'EOF'
-PROMPT='%F{cyan}[Luis-Tenemaza]]%f &F{yellow}%l~%f %(?.%F{green}ok,%F{red}bad %?)%F %#'
+PROMPT='%F{cyan}[Luis-Tenemaza]%f %F{yellow}%~%f %(?.%F{green}ok,%F{red}bad %?)%f %# '
 
