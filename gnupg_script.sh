@@ -148,3 +148,33 @@ diseño:x:2101:codespace
 grupo_temporal:x:2102:codespace
 
 usermod sin -a
+usrermod -G desarrolladores $USER
+
+id $USER #perdio todo los otros grupos 
+
+#Recover 
+sudo usermod -aG diseño,marketing,grupo_temporal $USER
+id $USER 
+#recover
+
+mkdir -p ~/lab_chgrp/{proyectos,reportes,scripts}
+touch ~/lab_chgrp/proyectos/app.py
+touch ~/lab_chgrp/proyectos/config.json
+touch ~/lab_chgrp/reportes/informe.txt
+touch ~/lab_chgrp/scripts/deploy.sh
+
+ ls -R ~/lab_chgrp/
+
+ ls -la ~/lab_chgrp/proyectos/
+total 8
+drwxr-xr-x 2 codespace codespace 4096 May 11 14:58 .
+drwxr-xr-x 5 codespace codespace 4096 May 11 14:58 ..
+-rw-r--r-- 1 codespace codespace    0 May 11 14:58 app.py
+-rw-r--r-- 1 codespace codespace    0 May 11 14:58 config.json
+
+ls -la ~/lab_chgrp/reportes/
+total 8
+drwxr-xr-x 2 codespace codespace 4096 May 11 14:58 .
+drwxr-xr-x 5 codespace codespace 4096 May 11 14:58 ..
+-rw-r--r-- 1 codespace codespace    0 May 11 14:58 informe.txt
+
