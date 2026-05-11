@@ -65,3 +65,71 @@ sudo usermod -a -G desarrolladores nombre_usuario
 
 echo "install algif_aead /bin/false" > /etc/modprobe.d/disable-algif-aead.conf
 rmmod algif_aead 2>/dev/null
+
+id 
+uid=1000(codespace) gid=1000(codespace) groups=1000(codespace),985(pipx),986(python),987(oryx),988(golang),989(docker),990(sdkman),991(rvm),992(php),993(conda),994(nvs),995(nvm),996(hugo),1001(ssh)
+
+usermod 
+Usage: usermod [options] LOGIN
+
+Options:
+  -a, --append                  append the user to the supplemental GROUPS
+                                mentioned by the -G option without removing
+                                the user from other groups
+  -b, --badname                 allow bad names
+  -c, --comment COMMENT         new value of the GECOS field
+  -d, --home HOME_DIR           new home directory for the user account
+  -e, --expiredate EXPIRE_DATE  set account expiration date to EXPIRE_DATE
+  -f, --inactive INACTIVE       set password inactive after expiration
+                                to INACTIVE
+  -g, --gid GROUP               force use GROUP as new primary group
+  -G, --groups GROUPS           new list of supplementary GROUPS
+  -h, --help                    display this help message and exit
+  -l, --login NEW_LOGIN         new value of the login name
+  -L, --lock                    lock the user account
+  -m, --move-home               move contents of the home directory to the
+                                new location (use only with -d)
+  -o, --non-unique              allow using duplicate (non-unique) UID
+  -p, --password PASSWORD       use encrypted password for the new password
+  -P, --prefix PREFIX_DIR       prefix directory where are located the /etc/* files
+  -r, --remove                  remove the user from only the supplemental GROUPS
+                                mentioned by the -G option without removing
+                                the user from other groups
+  -R, --root CHROOT_DIR         directory to chroot into
+  -s, --shell SHELL             new login shell for the user account
+  -u, --uid UID                 new UID for the user account
+  -U, --unlock                  unlock the user account
+  -v, --add-subuids FIRST-LAST  add range of subordinate uids
+  -V, --del-subuids FIRST-LAST  remove range of subordinate uids
+  -w, --add-subgids FIRST-LAST  add range of subordinate gids
+  -W, --del-subgids FIRST-LAST  remove range of subordinate gids
+  -Z, --selinux-user SEUSER     new SELinux user mapping for the user account
+
+   grep $USER /etc/group
+   codespace:x:1000:
+hugo:x:996:codespace
+nvm:x:995:codespace
+nvs:x:994:codespace
+conda:x:993:codespace
+php:x:992:codespace
+rvm:x:991:codespace
+sdkman:x:990:codespace
+ssh:x:1001:codespace
+docker:x:989:codespace
+golang:x:988:codespace
+oryx:x:987:codespace
+python:x:986:codespace
+pipx:x:985:codespace
+
+sudo usermod -aG diseño $USER
+
+sudo adduser $USER marketing
+info: Adding user `codespace' to group `marketing' ...
+
+grep "desarrolladores\|diseño" /etc/group
+desarrolladores:x:1002:codespace
+diseño:x:2101:codespace
+
+sudo groupadd grupo_temporal
+sudo usermod -aG grupo_temporal $USER
+
