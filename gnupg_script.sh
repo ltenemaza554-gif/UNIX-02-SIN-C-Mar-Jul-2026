@@ -133,3 +133,18 @@ diseño:x:2101:codespace
 sudo groupadd grupo_temporal
 sudo usermod -aG grupo_temporal $USER
 
+ id $USER
+ uid=1000(codespace) gid=1000(codespace) groups=1000(codespace),996(hugo),995(nvm),994(nvs),993(conda),992(php),991(rvm),990(sdkman),1001(ssh),989(docker),988(golang),987(oryx),986(python),985(pipx),1002(desarrolladores),2100(marketing),2101(diseño),2102(grupo_temporal)
+
+grep $USER /etc/group
+docker:x:989:codespace
+golang:x:988:codespace
+oryx:x:987:codespace
+python:x:986:codespace
+pipx:x:985:codespace
+desarrolladores:x:1002:codespace
+marketing:x:2100:codespace
+diseño:x:2101:codespace
+grupo_temporal:x:2102:codespace
+
+usermod sin -a
