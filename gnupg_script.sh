@@ -200,3 +200,17 @@ total 8
 drwxr-xr-x 2 codespace codespace 4096 May 11 14:58 .
 drwxr-xr-x 5 codespace codespace 4096 May 11 14:58 ..
 -rw-r--r-- 1 codespace diseño       0 May 11 14:58 informe.txt
+
+sudo chgrp -R desarrolladores ~/lab_chgrp/scripts/
+
+ls -laR ~/lab_chgrp/scripts/
+total 8
+drwxr-xr-x 2 codespace desarrolladores 4096 May 11 14:58 .
+drwxr-xr-x 5 codespace codespace       4096 May 11 14:58 ..
+-rw-r--r-- 1 codespace desarrolladores    0 May 11 14:58 deploy.sh
+#
+
+sudo chgrp -Rv diseño ~/lab_chgrp/reportes/
+group of '/home/codespace/lab_chgrp/reportes/informe.txt' retained as diseño
+changed group of '/home/codespace/lab_chgrp/reportes/' from codespace to diseño
+#
