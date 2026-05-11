@@ -185,3 +185,18 @@ drwxr-xr-x 5 codespace codespace       4096 May 11 14:58 ..
 -rw-r--r-- 1 codespace desarrolladores    0 May 11 14:58 app.py
 -rw-r--r-- 1 codespace codespace          0 May 11 14:58 config.json
 
+sudo chgrp diseño \
+~/lab_chgrp/proyectos/config.json \
+ ~/lab_chgrp/reportes/informe.txt
+
+ls -la ~/lab_chgrp/proyectos/
+drwxr-xr-x 2 codespace codespace       4096 May 11 14:58 .
+drwxr-xr-x 5 codespace codespace       4096 May 11 14:58 ..
+-rw-r--r-- 1 codespace desarrolladores    0 May 11 14:58 app.py
+-rw-r--r-- 1 codespace diseño             0 May 11 14:58 config.json
+
+ls -la ~/lab_chgrp/reportes/
+total 8
+drwxr-xr-x 2 codespace codespace 4096 May 11 14:58 .
+drwxr-xr-x 5 codespace codespace 4096 May 11 14:58 ..
+-rw-r--r-- 1 codespace diseño       0 May 11 14:58 informe.txt
