@@ -222,9 +222,6 @@ RUN chsh -s /usr/bim/zsh root
 
 RUN cat >> /root/.zshrc <<'EOF'
 
-PROMPT='%F{cyan}[Luis-Tenemaza]%f %F{yellow}%~%f %(?.%F{green}ok,%F{red}bad %?)%f %# '
-EOF
-
 # ===== Prompt del curso =====
 _set_prompt() {
     local ec=$?
