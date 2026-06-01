@@ -1,5 +1,6 @@
 bash --version 
 env
-/bin/bash 
+/bin/bash
+echo ${SHELL}
 echo ${RANDOM}
 echo ${OSTYPE}
