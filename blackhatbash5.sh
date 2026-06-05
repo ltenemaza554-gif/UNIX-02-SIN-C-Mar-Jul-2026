@@ -22,3 +22,12 @@ cat stderr.txt
 
 ls -l / &>> stdout_and_stderr.txt
 
+lzl 2> error.txt
+
+cat < output.txt
+
+
+cat << EOF
+Black Hat Bash 
+by No Starch Press 
+EOF
