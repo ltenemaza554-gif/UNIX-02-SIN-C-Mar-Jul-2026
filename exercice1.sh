@@ -1,6 +1,5 @@
 #!/bin/bash
-#!/bin/bash
-
+ 
 first_name=$1
 last_name=$2
 
