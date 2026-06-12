@@ -9,6 +9,3 @@ else
  echo "They are not equal!"
 fi
 
-VARIABLE_ONE="10"
-VARIABLE_TWO="20"
-if [["${VARIABLE_ONE}" -gt "${VARIABLE_TWO}"]]; then
