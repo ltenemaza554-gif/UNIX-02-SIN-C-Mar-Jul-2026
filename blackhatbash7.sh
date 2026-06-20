@@ -21,3 +21,24 @@ ps | grep -i tty
 
 grep -v "35.237.4.214" log.txt
 grep -o "35.237.4.214" log.txt
+
+awk '{print $1}' log.txt
+awk '{print $3}' log.txt
+awk '{print $1,$2,$3}' log.txt
+awk '{print $1,$NF}' log.txt
+awk -F',' '{print $1}' example_csv.txt
+echo "Tux Penguin,25,Mascota Linux,Antartida" >> text.csv
+awk -F',' '{print $1}' text.csv
+awk 'NR < 10' text.csv
+grep "42.236.10.117" log.txt
+awk '{print $7}'
+grep "42.236.10.117" tex.csv | awk '{print $7}'
+sed 's/Mozilla/Godzilla/g' log.txt
+grep "Godzilla" log.txt
+grep "Mozilla" log.txt
+sed 's/Mozilla/Godzilla/g' log.txt > newlog.txt
+sed 's/ //g' log.txt
+sed '1d' log.txt
+sed '5,7d' log.txt
+sed -n '2,15 p' log.txt
+sed -i '1d' log.tx
